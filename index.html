@@ -26,13 +26,132 @@
             fontFamily: {
               inter: ["Inter", "sans-serif"],
             },
+            backgroundImage:{
+              leaf1:"url('./images/leaf01.png')",
+            },
           },
         };
       </script>
 </head>
 <body class="font-inter">
-  <header></header>
-  <main></main>
+  <!-- header section -->
+  <header>
+    <!-- navbar -->
+    <nav class="container mx-auto">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          
+          <img class="w-[150px]" src="./images/logo.svg" alt="">
+        </div>
+
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-base font-semibold">Home</a></li>
+            <li><a class="text-base font-semibold">Showcase</a></li>
+            <li><a class="text-base font-semibold">Groceries</a></li>
+            <li><a class="text-base font-semibold">About</a></li>
+            <li><a class="text-base font-semibold">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="navbar-end space-x-6">
+          <div class="flex items-center space-x-2">
+            <p class="text-orange-600 text-lg font-bold">$10.00</p>
+            <img class="w-6 h-6 " src="./images/shopping-cart.png" alt="">
+          </div>
+          <img class="w-6 h-6" src="./images/profile.png" alt="">
+          <div class="dropdown bg-green-500 rounded-full">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <img class="w-5 h-5" src="./images/more.png" alt="">
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+              <li><a class="text-base font-semibold">Home</a></li>
+            <li><a class="text-base font-semibold">Showcase</a></li>
+            <li><a class="text-base font-semibold">Groceries</a></li>
+            <li><a class="text-base font-semibold">About</a></li>
+            <li><a class="text-base font-semibold">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <!-- banner -->
+    <div class="bg-leaf1 bg-no-repeat bg-right-bottom bg-contain h-auto lg:h-[600px]">
+    <div class="w-full h-full bg-[#ffffffb8] bg-opacity-15 py-4">
+     <div class="w-[90%] lg:w-3/4 mx-auto flex flex-col lg:flex-row items-center justify-center gap-6">
+      <div class="flex-1">
+        <img class="w-full" src="./images/bannerbg.png" alt="">
+      </div>
+      <div class="flex-1 space-y-4 text-left">
+      <h4 class="text-2xl font-bold">Best Quality Products</h4>
+      <h1 class="text-6xl font-bold">Join The <br> Organic <br> Movement!</h1>
+      <p class="text-base text-gray-600 w-[90%] lg:w-3/4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+      <button class="btn btn-success">
+        <i class="fa-solid fa-cart-shopping text-white"></i>
+        <h4 class="text-white">Shop Now</h4>
+      </button>
+      </div>
+     </div>
+    </div>
+    </div>
+  </header>
+
+  <!-- main section -->
+  <main>
+    <!-- cards -->
+     <section class="bg-black text-white">
+      <div class="p-8 grid grid-cols-1 lg:grid-cols-4 gap-6">
+
+        <div class="flex items-center justify-center space-x-3 bg-[#2a2929] px-5 py-8 rounded-lg">
+          <div>
+            <i class="fa-solid fa-truck fa-3x text-[#249e24]"></i>
+          </div>
+          <div>
+            <h4 class="text-2xl font-semibold">Free <br> Shipping</h4>
+            <p>Above 5$ Only</p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center space-x-3 bg-[#2a2929] px-5 py-8 rounded-lg">
+          <div>
+            <i class="fa-solid fa-certificate fa-3x text-[#249e24]"></i>
+          </div>
+          <div>
+            <h4 class="text-2xl font-semibold">Certified <br> Organic</h4>
+            <p>100% Organic</p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center space-x-3 bg-[#2a2929] px-5 py-8 rounded-lg">
+          <div>
+            <i class="fa-solid fa-piggy-bank fa-3x text-[#249e24]"></i>
+          </div>
+          <div>
+            <h4 class="text-2xl font-semibold">Huge <br>Savings</h4>
+            <p>At Lowest Price</p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center space-x-3 bg-[#2a2929] px-5 py-8 rounded-lg">
+          <div>
+            <i class="fa-solid fa-recycle fa-3x text-[#249e24]"></i>
+          </div>
+          <div>
+            <h4 class="text-2xl font-semibold">Easy <br> Returns</h4>
+            <p>No Questions Asked</p>
+          </div>
+        </div>
+
+      </div>
+     </section>
+
+     <section>
+      
+     </section>
+  </main>
   <footer></footer>
 </body>
 </html>
